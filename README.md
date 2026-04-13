@@ -1,7 +1,5 @@
 # Palmer Penguins — Statistical Models
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
-
 Exploratory data analysis and statistical inference on the [Palmer Penguins dataset](https://allisonhorst.github.io/palmerpenguins/), covering 333 penguins from three species in the Palmer Archipelago, Antarctica.
 
 ## Project Structure
