@@ -6,6 +6,7 @@ Exploratory data analysis and statistical inference on the [Palmer Penguins data
 
 ```
 palmer-penguins/
+├── images/
 ├── palmer_penguins_statistical_models.ipynb
 ├── penguins.csv
 └── README.md
@@ -70,6 +71,32 @@ Place `penguins.csv` in the same directory as the notebook and run all cells in 
 - Species and island are strongly associated (chi-square p ~ 0), but island has no measurable effect on Adélie body mass (ANOVA p = 0.995).
 - Bill length and bill depth show a negative global correlation (r = -0.23) that reverses to positive within each species — a textbook case of Simpson's Paradox.
 - A logistic regression using only flipper length and bill depth achieves perfect classification of Gentoo vs. non-Gentoo on the test set (AUC = 1.000).
+
+## Key Figures
+
+**Exploratory analysis** — Gentoo are heavier and have longer flippers.
+
+![EDA](images/01_eda.png)
+
+**95% confidence intervals for body mass** — Gentoo intervals do not overlap with other species.
+
+![Confidence intervals](images/02_confidence_intervals.png)
+
+**Species × island (chi-square)** — each species has a marked island preference.
+
+![Chi-square](images/03_chi_square.png)
+
+**Island effect on Adélie body mass (ANOVA)** — no significant difference (p = 0.995).
+
+![ANOVA](images/04_anova.png)
+
+**Simpson's Paradox** — the global correlation (r = -0.23) reverses within each species.
+
+![Simpson's paradox](images/05_simpson.png)
+
+**Gentoo vs. non-Gentoo (logistic regression)** — no errors on the test set.
+
+![Confusion matrix](images/06_confusion_matrix.png)
 
 ## Reference
 
